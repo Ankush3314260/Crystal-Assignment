@@ -6,9 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   overflow-x: hidden;
 }
+/* this code is for nav elements */
 .navbuttons {
   width: max-content;
 }
@@ -25,36 +26,35 @@ body{
 .navbuttons:hover::after {
   width: 100%;
 }
+/* this is the first introductory part code  */
 .heading {
   font-weight: 700;
 }
 .heading2 {
   font-weight: 400;
 }
-
+/* sliders code css  */
 .swiper {
   width: 20vw;
- 
-  /* height: max-content+50px; */
+  min-height: 400px;
   padding: 50px;
   background-position: center;
   background-size: cover;
-  background-color: white; 
+  background-color: white;
   box-shadow: 0px 4px 50px 0px #38434940;
   height: max-content;
   min-width: 100px;
   border-radius: 40px;
-
 }
-@media (max-width:700px){
+@media (max-width: 700px) {
   .swiper {
     width: 20vw;
-   
-    /* height: max-content+50px; */
+
+ 
     padding: 50px;
     background-position: center;
     background-size: cover;
-    background-color: white; 
+    background-color: white;
     box-shadow: 0px 4px 50px 0px #38434940;
     min-height: 200px;
     min-width: 150px;
@@ -62,52 +62,45 @@ body{
   }
   .swiper-slide img {
     margin: auto;
- 
+
     padding: 0px;
     display: flex;
     align-items: center;
     object-fit: cover;
-   
   }
 }
-.custom-pagination{
-  color: #8A93E5 !important;
+.custom-pagination {
+  color: #8a93e5 !important;
 }
-.swiper-pagination-bullet{
-  background-color: #8A93E5 !important;
+.swiper-pagination-bullet {
+  background-color: #8a93e5 !important;
 }
 .swiper-slide img {
   margin: auto;
-  width: 70%; 
+  width: 70%;
   padding: 10px;
- 
 }
-.swiper-slide  {
+.swiper-slide {
   position: relative;
- overflow-x: hidden;
- 
+  overflow-x: hidden;
 }
-#left{
+#left {
   min-width: 40px;
-
 }
-#right{
+#right {
   min-width: 50px;
-
 }
-.custom-pagination{
+.custom-pagination {
   display: flex;
   justify-items: center;
   justify-content: center;
 }
 select {
-  background-color:white; /* Change the background of the dropdown */
- /* Text color */
+  background-color: white; /* Change the background of the dropdown */
+  /* Text color */
   font-weight: 400;
-  
- 
 }
-#dropdown{
+#dropdown {
   font-weight: 500;
 }
 select:focus {
@@ -115,11 +108,10 @@ select:focus {
   outline: none;
   font-weight: 500;
 }
-option{
+option {
   outline: none;
-  background-color:white;
+  background-color: white;
   border: none;
-  
 }
 #product-list {
   display: flex;
@@ -127,7 +119,7 @@ option{
   gap: 20px;
 
   margin: auto;
- 
+
   justify-content: center;
 }
 
@@ -138,71 +130,68 @@ option{
   min-width: 200px;
   text-align: center;
   border-radius: 10px;
-  
+
   color: black;
 }
 
 .product-card img {
   object-fit: cover;
   height: 250px;
- margin: auto;
- 
+  margin: auto;
+
   border-radius: 10px;
 }
-.buytbutton{
+.buytbutton {
   margin-top: 20px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   position: relative;
-  
- z-index: 10;
-  border: 1px solid #75CCEB;
-  border-radius: 10px ;
-  
- 
-  background-image: linear-gradient(to right,white,white);
-  color:#75CCEB;
+
+  z-index: 10;
+  border: 1px solid #75cceb;
+  border-radius: 10px;
+
+  background-image: linear-gradient(to right, white, white);
+  color: #75cceb;
 }
-.buytbutton:hover{
-  border: 0px solid #75CCEB;
-  background-image:  linear-gradient(to right, #75CCEB, #6FB4FF); 
-  box-shadow: 0 4px 8px #70B8FB73; 
-  color:white;
+.buytbutton:hover {
+  border: 0px solid #75cceb;
+  background-image: linear-gradient(to right, #75cceb, #6fb4ff);
+  box-shadow: 0 4px 8px #70b8fb73;
+  color: white;
 }
-h3 >span{
-  color:#317189 ;
+h3 > span {
+  color: #317189;
   font-weight: 700;
 }
-#paginationbutton{
+#paginationbutton {
   margin-top: 10px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   position: relative;
-  
- z-index: 10;
-  border: 1px solid #75CCEB;
-  border-radius: 15px ;
-  
- 
-  background-image: linear-gradient(to right,white,white);
-  color:#75CCEB;
+
+  z-index: 10;
+  border: 1px solid #75cceb;
+  border-radius: 15px;
+
+  background-image: linear-gradient(to right, white, white);
+  color: #75cceb;
 }
-#lastsectionnutbutton{
+#lastsectionnutbutton {
   margin-top: 10px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  position: relative;  
- z-index: 10;
- color: white;
- font-weight: 400;
-  border-radius: 5px ;
-  background-image:  linear-gradient(to right, #75CCEB, #6FB4FF); 
+  position: relative;
+  z-index: 10;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #75cceb, #6fb4ff);
   cursor: pointer !important;
 }
-

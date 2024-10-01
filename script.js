@@ -1,3 +1,4 @@
+// this is the product list to render th products
 const products = [
     {
      name:"CRYSTAL AGATE PHONE GRIP ",
